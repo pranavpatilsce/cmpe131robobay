@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<title>CHRIS.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+<body>
+
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close Menu</a>
+  <a href="#robots" onclick="w3_close()" class="w3-bar-item w3-button">Robots on sale</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1500px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-right w3-padding-16"><a href="mailto:chris.farnes@sjsu.edu?subject=I%20need%20a%20robot...%20NOW!">Contact us</a> </div>
+    <div class="w3-center w3-padding-16">Robot Ebay</div>
+  </div>
+</div>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <img src="https://www.monstersinmotion.com/cart/images/categories/111KO01_01.jpg" alt="Premium" style="width:100%">
+      <h3>Super SCE robot</h3>
+      <p>Destroys any packing issue you might encounter.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://vignette.wikia.nocookie.net/starwars/images/e/eb/ArtooTFA2-Fathead.png/revision/latest?cb=20161108040914" alt="Galactic packaging package" style="width:50%">
+      <h3>Packaging strikes back</h3>
+      <p>The galactic packaging system allows you to save money on electricity bu using the Force as an energy source.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="data:image/jpeg;base64,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" alt="Cherries" style="width:75%">
+      <h3>The bending unit</h3>
+      <p>Bend any package to your fit your needs.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://vignette.wikia.nocookie.net/pixar/images/d/de/Wall%E2%80%A2e_clipped_rev_1.png/revision/latest/scale-to-width-down/282?cb=20170807223723" alt="Pasta and Wine" style="width:75%">
+      <h3>Buy N Large robot</h3>
+      <p>Has your crew become trapped in their own reality while the world around you is in disarray?
+	  Then this is the robot for you.</p>
+	   <span class="w3-tag w3-red w3-margin-bottom">Disclaimer: May or may not package</span>
+    </div>
+  </div>
+  <!--
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="https://www.universalstudioshollywood.com/site-content/uploads/2017/04/transformers-ride-orlando-marquee-f.png" alt="Popsicle" style="width:65%">
+      <h3>Transforming robot</h3>
+      <p>For those who want to package their valuables and save humanity.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://www.sideshowtoy.com/wp-content/uploads/2016/02/terminator-genisys-endoskeleton-sixth-scale-hot-toys-thumb-902662.jpg" alt="Salmon" style="width:75%">
+      <h3>The terminator</h3>
+      <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://cdn.pixabay.com/photo/2014/04/03/11/55/robot-312566_960_720.png" alt="Sandwich" style="width:65%">
+      <h3>The Perfect Sandwich, A Real Classic</h3>
+      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="http://images.media-allrecipes.com/userphotos/960x960/3757728.jpg" alt="Croissant" style="width:75%">
+      <h3>Super Burrito</h3>
+      <p>We know life is not all about packaging so take a break, eat a burrito.</p>
+    </div>
+  </div>
+ 
+  -->
+  
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+  
+  <hr id="about">
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32 w3-center">  
+    <h3>Why we sell robots</h3><br>
+    <img src="https://dl7wxjdwp2cl2.cloudfront.net/image/cache/catalog/Packaging-900x235.jpg" alt="About us" class="w3-image" style="display:block;margin:auto" width="800" height="533">
+    <div class="w3-padding-32">
+      <h4><b>PACKAGING FOR THE FUTURE!</b></h4>
+      <h6><i><b>"We love making robots and love watching them package our packages. Specially when they package other robots!"</i></b></h6>
+      <p>We initiated this project to aid SCE members with their packaging needs. We believed that learnign to package is the most essential part of obtaining an education at SJSU.</p>
+    </div>
+  </div>
+  <hr>
+  
+  <!-- Footer -->
+  <footer class="w3-row-padding w3-padding-32">
+    <div class="w3-third">
+      <h3>Disclaimer</h3>
+      <p>We are only intermediaries for individuals interested in selling, or aquiring packaging goods. We are not accountable
+	  if someone steals your money, so be woke.</p>
+      <p>Powered by Bananas</p>
+    </div>
+  
+    <div class="w3-third">
+      <h3>PACKAGING STORIES</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <img src="https://dartstorage.co/wp-content/uploads/2016/05/OpenCardboardBox_2.jpg86a9e6a0-b552-4bfe-8923-71a6f174e5faOriginal.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">8 Stories</span><br>
+          <span><a href="https://blog.hubspot.com/marketing/iconic-packaging-designs-stories" >More stories</a> </span>
+        </li>
+        <li class="w3-padding-16">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqyrJSz6q5tIcDyVCmB7x5wjJMjHwbK7MhsIowWqZ5UgSJWDSL" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Ipsum</span><br>
+          <span><a href="https://blog.hubspot.com/marketing/iconic-packaging-designs-stories" >More stories</a> </span>
+        </li> 
+      </ul>
+    </div>
+
+    <div class="w3-third w3-serif">
+      <h3>POPULAR TAGS</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dinner</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Salmon</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">France</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Drinks</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Flavors</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Cuisine</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Chicken</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dressing</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fried</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fish</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Duck</span>
+      </p>
+    </div>
+  </footer>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
